@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600;700&display=swap');
+html, body {
+    /*background-color:#323E40;*/
+    background-color: rgb(46, 49, 49);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: 'Raleway', sans-serif;  
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+#h1, #img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+#day {
+    color:whitesmoke;
+    font-weight: bold;
+}
+#img {
+    width: 70px;
+}
+a {
+    color:whitesmoke;
+    text-decoration: none;
+    font-weight:bold;
+}
+a:hover {
+    background-color: rgba(0, 0, 0, 0.459);
+}
+.logo {
+    font-size: 1.8rem;
+    font-weight:bolder;
+    color:#7BBF15;
+}
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+#btn-mobile {
+    display: none;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    margin: auto;
+}
+header .head {
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.nave {
+    display: flex;
+    flex-direction: column;
+    margin-left: 160px;
+    width: 150px;
+    rotate: -10deg;
+}
+.esquerda > img {
+    position: absolute;
+    right: 0;
+}
+.h1-pizza {
+    margin-left: 40px;
+    font-size:2.8em;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.678);
+}
+.h2-pizza {
+    margin-left: 40px;
+    font-size: 2.1em;
+    color:#7BBF15;
+    text-indent: 40px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.329);
+    line-height: 7px;
+}
+.botao {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px 50px 10px;
+    border: none;
+    background-color: #7BBF15;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+.botao {
+    margin-top: 20px;
+    margin-left: 170px;
+    position: absolute;
+    cursor: pointer;
+   
+}
+.pizza-p {
+    font-size: 1.5em;
+    margin-left: 180px;
+    padding-top: 10px;
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+    #btn-mobile {
+        display: block;
+        cursor: pointer;
+    }
+    #menu {
+        display:block;
+        position: absolute;
+        width: 75%;
+        top: 70px;
+        right:0;
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+
+
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.438);
+    }
+}
+
+
+
+
+
+
